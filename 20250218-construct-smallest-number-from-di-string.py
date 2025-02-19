@@ -6,13 +6,9 @@ class Solution:
                 return "12"
             else :
                 return "21"
-        num = []
-        for item in range(len(pattern)) :
-            num.append(item+1)
-        num.append(num[-1]+1)
+        num = [i+1 for i in range(len(pattern)+1)]
         index = 0
         p_ini = 0
-        p_end = 1
         while index < len(pattern) :
             if pattern[index] == 'I' :
                 p_ini = index+1
