@@ -10,7 +10,7 @@ class Solution:
             else :
                 val_hashmap[nums[index]] = 1
             index += 1
-        # Check max sum between neighbours - O(n)
+        # Check max sum between neighbours - O(nlogn)
         max_sum = 0
         unique_vals = sorted(list(val_hashmap.keys()))
         index = 0
