@@ -13,11 +13,8 @@ class Solution:
         # Sort vowels
         vowelss = sorted(vowelss)
         # Reassign vowels
-        vowels_index = 0
-        index = 0
-        while index < len(s) :
-            if s[index] in ['A','E','I','O','U','a','e','i','o','u'] :
-                s = s[:index]+vowelss[vowels_index]+s[index+1:]
-                vowels_index += 1
-            index += 1
+        while len(indexes) > 0 :
+            s = s[:indexes[0]]+vowelss[0]+s[indexes[0]+1:]
+            indexes.pop(0)
+            vowelss.pop(0)
         return s
