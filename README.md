@@ -1,1 +1,1 @@
-Leetcode provides a daily problem to solve. Some days I have spare time to provide a working solution that pass all their inputs, so storing them here.
+Leetcode provides a daily problem to solve. Some days I have spare time to provide a working solution that pass all their inputs, so storing them here. No specific optimization technique implemented. 
